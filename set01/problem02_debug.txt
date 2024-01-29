@@ -1,0 +1,137 @@
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set01> gdb .\problem02a.exe
+GNU gdb (GDB) 10.2
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+.\problem02a.exe: No such file or directory.
+(gdb) b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) r
+Starting program:
+No executable specified, use `target exec'.
+(gdb) quit
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set01> gdb .\problem02.exe
+GNU gdb (GDB) 10.2
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+--Type <RET> for more, q to quit, c to continue without paging--
+Reading symbols from .\problem02.exe...
+(gdb) quit
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set01> gdb .\problem02.exe 
+GNU gdb (GDB) 10.2
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+--Type <RET> for more, q to quit, c to continue without paging--
+Reading symbols from .\problem02.exe...
+(gdb) quit 
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set01> gdb .\problem02.exe
+GNU gdb (GDB) 10.2
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+--Type <RET> for more, q to quit, c to continue without paging--
+Reading symbols from .\problem02.exe...
+(gdb) r
+Starting program: C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set01\problem02.exe
+[New Thread 23312.0x890]
+enter a
+4
+enter b
+7
+[Thread 23312.0x890 exited with code 11]
+[Inferior 1 (process 23312) exited with code 013]
+(gdb) b 5
+Breakpoint 1 at 0x7ff60b8515ef: file .\problem02.c, line 6.
+(gdb) b 7
+Breakpoint 2 at 0x7ff60b8515fb: file .\problem02.c, line 7.
+(gdb) b 9
+Breakpoint 3 at 0x7ff60b85161a: file .\problem02.c, line 9.
+(gdb) n
+The program is not being run.
+(gdb) r
+Starting program: C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set01\problem02.exe
+[New Thread 9112.0x6210]
+
+Thread 1 hit Breakpoint 1, main () at .\problem02.c:6
+6         printf("enter a\n");
+(gdb) n
+enter a
+
+Thread 1 hit Breakpoint 2, main () at .\problem02.c:7
+7         scanf("%d" , &a);
+(gdb) n
+[Thread 9112.0x6210 exited with code 0]
+5
+8          printf("enter b\n");
+(gdb) n
+enter b
+
+Thread 1 hit Breakpoint 3, main () at .\problem02.c:9
+9         scanf("%d" , &b);
+(gdb) n
+6
+10        sum=a+b;
+(gdb) n
+11        return sum;
+(gdb) print sum
+$1 = 11
+(gdb) p a
+$2 = 5
+(gdb) p b
+$3 = 6
+(gdb) n
+13      }
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 9112] will be killed.
+
+Quit anyway? (y or n) y
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set01> 
