@@ -1,0 +1,49 @@
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set01> gdb .\problem06.exe 
+GNU gdb (GDB) 10.2
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+--Type <RET> for more, q to quit, c to continue without paging--c
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from .\problem06.exe...
+(gdb) b main
+Breakpoint 1 at 0x1400016d2: file problem06.c, line 28.
+(gdb) r
+Starting program: C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set01\problem06.exe 
+[New Thread 9572.0x61f0]
+
+Thread 1 hit Breakpoint 1, main () at problem06.c:28
+28        input(&a,&b,&c);
+(gdb) n
+Enter the number
+6
+8
+9
+29        compare(a,b,c,&largest);
+(gdb) n
+30        output(a,b,c,largest);
+(gdb) n
+input number are 6,8 and 9
+largest number is 9
+31        return 0;
+(gdb) n
+32      
+(gdb) n
+__tmainCRTStartup () at C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtexe.c:336
+336     C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtexe.c: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 9572] will be killed.
+
+Quit anyway? (y or n) y
