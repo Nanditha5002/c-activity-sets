@@ -5,7 +5,7 @@ int input()
 
 {
   int n;
-  printf("Enter one number");
+  printf("Enter one number\n");
   scanf("%d",&n);
   return n;
 }
@@ -17,7 +17,7 @@ return sum;
 }
 void output (int a , int b, int sum)
 {
-  printf("the sum of %d + %d is %d" , a,b,sum);
+  printf("the sum of %d and  %d is %d /n" , a,b,sum);
 }
 int main()
 {
