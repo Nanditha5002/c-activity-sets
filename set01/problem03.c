@@ -4,27 +4,27 @@
 int input()
 
 {
-  int a;
+  int n;
   printf("Enter one number");
-  scanf("%d" , &a);
-  return a;
+  scanf("%d",&n);
+  return n;
 }
 int add (int a , int b)
 {
-int c;
-c=a+b;
-return c;
+int sum;
+sum=a+b;
+return sum;
 }
-void output (int a , int b, int c)
+void output (int a , int b, int sum)
 {
-  printf("the sum of %d + %d is %d" , a,b,c);
+  printf("the sum of %d + %d is %d" , a,b,sum);
 }
 int main()
 {
-  int a,b,c;
+  int a,b,sum;
   a = input();
   b = input();
-  c = add(a,b);
-  output(a,b,c);
+  sum = add(a,b);
+  output(a,b,sum);
   return 0;
 }
