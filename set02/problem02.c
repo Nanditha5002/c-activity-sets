@@ -21,7 +21,6 @@ void output(int a, int b, int c, int isscalene) {
         printf("not scalene.\n");
     }
 }
-
 int main() {
     int side1 = input_side();
     int side2 = input_side();
