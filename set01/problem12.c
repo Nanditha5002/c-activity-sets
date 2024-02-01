@@ -1,3 +1,4 @@
+// write a c program to find the sum of complex numbers
 #include<stdio.h>
 struct _complex {
  float real,imaginary;
