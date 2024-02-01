@@ -7,8 +7,8 @@ There is NO WARRANTY, to the extent permitted by law.
 Type "show copying" and "show warranty" for details.
 This GDB was configured as "x86_64-w64-mingw32".
 Type "show configuration" for configuration details.
---Type <RET> for more, q to quit, c to continue without paging--c
 For bug reporting instructions, please see:
+--Type <RET> for more, q to quit, c to continue without paging--c
 <https://www.gnu.org/software/gdb/bugs/>.
 Find the GDB manual and other documentation resources online at:
     <http://www.gnu.org/software/gdb/documentation/>.
@@ -20,7 +20,7 @@ Reading symbols from .\problem01.exe...
 Breakpoint 1 at 0x14000171d: file .\problem01.c, line 23.
 (gdb) r
 Starting program: C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set02\problem01.exe
-[New Thread 11348.0x28d0]
+[New Thread 20160.0x43f0]
 
 Thread 1 hit Breakpoint 1, main () at .\problem01.c:23
 23          input(&base, &height);
@@ -44,6 +44,6 @@ __tmainCRTStartup () at C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtex
 (gdb) quit
 A debugging session is active.
 
-        Inferior 1 [process 11348] will be killed.
+        Inferior 1 [process 20160] will be killed.
 
 Quit anyway? (y or n) y
