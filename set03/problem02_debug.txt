@@ -1,0 +1,50 @@
+ create mode 100644 set03/problem02_error.txt
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set03> gcc -g -O0 .\problem02.c -o .\problem02.exe
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set03> gdb .\problem02.exe
+GNU gdb (GDB) 10.2
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+--Type <RET> for more, q to quit, c to continue without paging--c
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from .\problem02.exe...
+(gdb) b main
+Breakpoint 1 at 0x14000184b: file .\problem02.c, line 30.
+(gdb) r
+Starting program: C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set03\problem02.exe
+[New Thread 13784.0x120]
+
+Thread 1 hit Breakpoint 1, main () at .\problem02.c:30
+30          input_triangle(&x1, &y1, &x2, &y2, &x3, &y3);
+(gdb) n
+Enter the coordinates of the first point (x1 y1):1 1
+Enter the coordinates of the second point (x2 y2):0 0
+Enter the coordinates of the third point (x3 y3):1 1 
+31          int result = is_triangle(x1, y1, x2, y2, x3, y3);
+(gdb) n
+32          output(x1, y1, x2, y2, x3, y3, result);
+(gdb) n
+The points (1.00, 1.00), (0.00, 0.00), and (1.00, 1.00) do not form a triangle.
+33          return 0;
+(gdb) n
+34      }
+(gdb) n
+__tmainCRTStartup () at C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtexe.c:336
+336     C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtexe.c: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 13784] will be killed.
+
+Quit anyway? (y or n) y
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set03> 
