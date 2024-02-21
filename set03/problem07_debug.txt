@@ -1,0 +1,95 @@
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set03> gdb .\problem07.exe
+GNU gdb (GDB) 10.2
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+--Type <RET> for more, q to quit, c to continue without paging--c
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from .\problem07.exe...
+(gdb) b main
+Breakpoint 1 at 0x14000178d: file .\problem07.c, line 39.
+(gdb) c
+The program is not being run.
+(gdb) r
+Starting program: C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set03\problem07.exe
+[New Thread 13088.0x416c]
+
+Thread 1 hit Breakpoint 1, main () at .\problem07.c:39
+39          l = input_line();
+(gdb) n
+Enter coordinates for first point:
+Enter x coordinate: 1 1
+Enter y coordinate: Enter coordinates for second point:
+Enter x coordinate: 2 2
+Enter y coordinate: 40      find_length(&l);
+(gdb) 1
+Undefined command: "1".  Try "help".
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set03\problem07.exe 
+[New Thread 23528.0x5b08]
+
+Thread 1 hit Breakpoint 1, main () at .\problem07.c:39
+39          l = input_line();
+(gdb) n
+Enter coordinates for first point:
+Enter x coordinate: 1
+Enter y coordinate: 2
+Enter coordinates for second point:
+Enter x coordinate: 1
+Enter y coordinate: 2
+40          find_length(&l);
+(gdb) n
+41          output(l);
+(gdb) n
+Length of the line: 0.00
+43          return 0;
+(gdb) n
+44      }
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set03\problem07.exe
+[New Thread 11312.0x18c8]
+
+Thread 1 hit Breakpoint 1, main () at .\problem07.c:39
+39          l = input_line();
+(gdb) n
+Enter coordinates for first point:
+Enter x coordinate: 1
+Enter y coordinate: 1
+Enter coordinates for second point:
+Enter x coordinate: 2
+Enter y coordinate: 2
+40          find_length(&l);
+(gdb) n
+41          output(l);
+(gdb) n
+Length of the line: 1.41
+43          return 0;
+(gdb) n
+44      }
+(gdb) n
+__tmainCRTStartup () at C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtexe.c:336
+336     C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtexe.c: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 11312] will be killed.
+
+Quit anyway? (y or n) y
