@@ -1,0 +1,86 @@
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set04> gdb .\problem02.exe
+GNU gdb (GDB) 10.2
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+--Type <RET> for more, q to quit, c to continue without paging--c
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from .\problem02.exe...
+(gdb) b main
+Breakpoint 1 at 0x14000171b: file .\problem02.c, line 36.
+(gdb) r
+Starting program: C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set04\problem02.exe
+[New Thread 7204.0x48f8]
+
+Thread 1 hit Breakpoint 1, main () at .\problem02.c:36
+36          printf("Enter the first fraction (numerator/denominator): ");
+(gdb) n
+Enter the first fraction (numerator/denominator): 37        input(&frac1);
+(gdb) 1/2
+Undefined command: "1".  Try "help".
+(gdb) help         
+List of classes of commands:
+
+aliases -- User-defined aliases of other commands.
+breakpoints -- Making program stop at certain points.
+data -- Examining data.
+files -- Specifying and examining files.
+internals -- Maintenance commands.
+obscure -- Obscure features.
+running -- Running the program.
+--Type <RET> for more, q to quit, c to continue without paging--c
+stack -- Examining the stack.
+status -- Status inquiries.
+support -- Support facilities.
+text-user-interface -- TUI is the GDB text based interface.
+tracepoints -- Tracing of program execution without stopping the program.
+user-defined -- User-defined commands.
+
+Type "help" followed by a class name for a list of commands in that class.
+Type "help all" for the list of all commands.
+Type "help" followed by command name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Type "apropos -v word" for full documentation of commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+(gdb) n
+p [Thread 7204.0x48f8 exited with code 0]
+b 36
+38          printf("Enter the second fraction (numerator/denominator): ");
+(gdb) n
+Enter the second fraction (numerator/denominator): 39       input(&frac2);
+(gdb) 1/2
+Undefined command: "1".  Try "help".
+(gdb) n
+40          printf("Enter the third fraction (numerator/denominator): ");
+(gdb) n
+Enter the third fraction (numerator/denominator): 41        input(&frac3);
+(gdb) 1/3
+Undefined command: "1".  Try "help".
+(gdb) n
+42          find_smallest(frac1, frac2, frac3, &smallest);
+(gdb) n
+43          output(smallest);
+(gdb) n
+The smallest fraction is -1633544704/517
+44          return 0;
+(gdb) n
+45      }
+(gdb) n
+__tmainCRTStartup () at C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtexe.c:336
+336     C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtexe.c: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 7204] will be killed.
+
+Quit anyway? (y or n) y
