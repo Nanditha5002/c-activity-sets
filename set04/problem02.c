@@ -6,7 +6,7 @@ typedef struct {
     int num, den;
 } Fraction;
 void input(Fraction *frac) {
-    scanf("%d/%d", &frac->num, &frac->den);
+    scanf("%d%d", &frac->num, &frac->den);
 }
 int compare(Fraction frac1, Fraction frac2) {
     int val1 = frac1.num * frac2.den;
