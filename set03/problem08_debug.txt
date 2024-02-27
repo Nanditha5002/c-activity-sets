@@ -1,0 +1,60 @@
+PS C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set03> gdb .\problem08.exe
+GNU gdb (GDB) 10.2
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+--Type <RET> for more, q to quit, c to continue without paging--c
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from .\problem08.exe...
+(gdb) b main
+Breakpoint 1 at 0x140001847: file .\problem08.c, line 57.
+(gdb) r
+Starting program: C:\Users\Ramya M Acharya\OneDrive\.vscode\c-activity-sets\set03\problem08.exe
+[New Thread 2420.0x5e08]
+
+Thread 1 hit Breakpoint 1, main () at .\problem08.c:57
+57          poly.sides = input_n();
+(gdb) n
+Enter the number of sides of the polygon: 4
+58          input_polygon(&poly);
+(gdb) n
+Enter the coordinates of the vertices:
+
+Enter x coordinate: 0
+Enter y coordinate: 0
+
+Enter x coordinate: 1
+Enter y coordinate: 0
+
+Enter x coordinate: 1
+Enter y coordinate: 1
+
+Enter x coordinate: 0
+Enter y coordinate: 1
+59          find_perimeter(&poly);
+(gdb) n
+60          output(poly);
+(gdb) n
+Perimeter of the polygon: 4.00
+61          return 0;
+(gdb) n
+62      }
+(gdb) n
+__tmainCRTStartup () at C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtexe.c:336
+336     C:/crossdev/src/mingw-w64-v8-git/mingw-w64-crt/crt/crtexe.c: No such file or directory.
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 2420] will be killed.
+
+Quit anyway? (y or n) y
