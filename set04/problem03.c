@@ -8,3 +8,21 @@ void input_n_and_r(int *n, int *r) {
     scanf("%d", r);
 }
 
+int nCr(int n, int r) {
+    if (r == 0 || r == n) {
+        return 1;
+    } else {
+        return nCr(n - 1, r - 1) + nCr(n - 1, r);
+    }
+}
+
+void output(int n, int r, int result) {
+    printf("The value of %dC%d is: %d\n", n, r, result);
+}
+int main() {
+    int n, r;
+    input_n_and_r(&n, &r); 
+    int result = nCr(n, r);
+    output(n, r, result); 
+    return 0;
+}
